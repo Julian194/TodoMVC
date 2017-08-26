@@ -2,10 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script type="text/javascript" src="script.js"></script>
+    <title>Todo MVC</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
+    <h1>Todo List</h1>
+    <h3>See all your Todos in one place</h3>
+
+    <div>
+      <button onclick="handlers.displayTodos()">Display Todos</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick="handlers.addTodo()">Add Todo</button>
+      <input type="text" id="addTodoTextInput">
+    </div>
+
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input type="number" id="changeTodoPositionInput">
+      <input type="text" id="changeTodoTextInput">
+    </div>
+
+    <div>
+      <button onclick="handlers.deleteTodo()">Delete Todo</button>
+      <input type="number" id="deleteTodoPositionInput">
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle completed</button>
+      <input type="number" id="toggleCompletedPositionInput">
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
