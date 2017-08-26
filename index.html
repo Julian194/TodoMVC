@@ -10,6 +10,10 @@
     <h3>See all your Todos in one place</h3>
 
     <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
       <button onclick="handlers.addTodo()">Add Todo</button>
       <input type="text" id="addTodoTextInput">
     </div>
@@ -18,11 +22,6 @@
       <button onclick="handlers.changeTodo()">Change Todo</button>
       <input type="number" id="changeTodoPositionInput">
       <input type="text" id="changeTodoTextInput">
-    </div>
-
-    <div>
-      <button onclick="handlers.deleteTodo()">Delete Todo</button>
-      <input type="number" id="deleteTodoPositionInput">
     </div>
 
     <div>
